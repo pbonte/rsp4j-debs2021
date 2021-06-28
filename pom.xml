@@ -28,7 +28,12 @@
             <version>1.18.12</version>
             <scope>provided</scope>
         </dependency>
-
+	<!-- https://mvnrepository.com/artifact/com.github.jsonld-java/jsonld-java -->
+	<dependency>
+	    <groupId>com.github.jsonld-java</groupId>
+	    <artifactId>jsonld-java</artifactId>
+	    <version>0.13.3</version>
+	</dependency>
     </dependencies>
 
 
