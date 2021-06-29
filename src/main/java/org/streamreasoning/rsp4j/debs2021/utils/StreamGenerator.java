@@ -27,7 +27,7 @@ public class StreamGenerator {
 
     public StreamGenerator() {
         this.streamIndexCounter = new AtomicLong(0);
-        this.activeStreams = new HashMap<String, DataStream<Graph>>();
+        this.activeStreams = new HashMap<>();
         this.isStreaming = new AtomicBoolean(false);
         randomGenerator = new Random(1336);
     }

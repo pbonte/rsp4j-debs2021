@@ -35,7 +35,7 @@ public class R2RUpwardExtension implements RelationToRelationOperator<Graph, Gra
     public Stream<Graph> eval(Stream<Graph> tvg) {
         RDF instance = RDFUtils.getInstance();
 
-        Set<Graph> sol = new HashSet<Graph>();
+        Set<Graph> sol = new HashSet<>();
         // iterate over the triples in the SDS
         for (Graph g : tvg.collect(Collectors.toList())) {
             Graph upwardGraph = RDFUtils.createGraph();
