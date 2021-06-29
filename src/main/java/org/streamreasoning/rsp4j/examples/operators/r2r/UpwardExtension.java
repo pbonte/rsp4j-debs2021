@@ -12,12 +12,12 @@ public class UpwardExtension {
     public void addSchema(Map<String, List<String>> schema) {
         // 1 To extract the top parents, we extract all concepts and remove those that have parents:
         // 1.1 get all childeren
-        Set<String> childeren = new HashSet<String>();
+        Set<String> childeren = new HashSet<>();
         for (List<String> childs : schema.values()) {
             childeren.addAll(childs);
         }
         // 1.2. get all the types
-        Set<String> all = new HashSet<String>(childeren);
+        Set<String> all = new HashSet<>(childeren);
         all.addAll(schema.keySet());
         Set<String> tops = new HashSet(all);
         // 1.2 remove the childeren from all the types and the parents remain
